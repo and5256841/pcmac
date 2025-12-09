@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PCMAC | Tu Experto Apple de Confianza - Business Partner Colombia</title>
+  <meta name="description" content="Más de 26 años como Business Partner y Authorized Service Provider de Apple en Colombia. Soluciones empresariales, educativas y servicio técnico certificado.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      /* Brand Colors - Aligned with current site */
+      --primary: #0071E3;
+      --primary-dark: #0058B0;
+      --primary-light: #42A5F5;
+      
+      /* Apple-style neutrals */
+      --white: #FFFFFF;
+      --gray-50: #FBFBFD;
+      --gray-100: #F5F5F7;
+      --gray-200: #E8E8ED;
+      --gray-300: #D2D2D7;
+      --gray-400: #86868B;
+      --gray-500: #6E6E73;
+      --gray-600: #515154;
+      --gray-700: #424245;
+      --gray-800: #1D1D1F;
+      --gray-900: #000000;
+      
+      /* Accent */
+      --accent-green: #34C759;
+      --accent-orange: #FF9500;
+      --accent-red: #FF3B30;
+      
+      /* Typography */
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+      
+      /* Spacing */
+      --section-padding: clamp(5rem, 12vw, 10rem);
+      --container-max: 1200px;
+      
+      /* Transitions */
+      --transition-fast: 0.2s ease;
+      --transition-smooth: 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-main);
+      font-weight: 400;
+      color: var(--gray-800);
+      background: var(--white);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 clamp(1.5rem, 5vw, 3rem);
+    }
+
+    /* === NAVIGATION === */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(251, 251, 253, 0.8);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 48px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      height: 28px;
+      width: auto;
+    }
+
+    .nav-logo-text {
+      font-weight: 700;
+      font-size: 1.125rem;
+      color: var(--gray-800);
+      letter-spacing: -0.02em;
+    }
+
+    .nav-links {
+      display: none;
+      list-style: none;
+      gap: 1.75rem;
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      .nav-links {
+        display: flex;
+      }
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--gray-600);
+      font-size: 0.75rem;
+      font-weight: 500;
+      transition: var(--transition-fast);
+    }
+
+    .nav-links a:hover {
+      color: var(--gray-900);
+    }
+
+    .nav-cta {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 980px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition-fast);
+      text-decoration: none;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-dark);
+    }
+
+    .nav-mobile-toggle {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .nav-mobile-toggle span {
+      width: 18px;
+      height: 1.5px;
+      background: var(--gray-800);
+    }
+
+    @media (min-width: 900px) {
+      .nav-mobile-toggle {
+        display: none;
+      }
+    }
+
+    /* === HERO === */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(180deg, var(--gray-50) 0%, var(--white) 100%);
+      padding-top: 48px;
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: 3rem;
+      align-items: center;
+      padding: 4rem 0;
+    }
+
+    @media (min-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        padding: 6rem 0;
+      }
+    }
+
+    .hero-content {
+      text-align: center;
+    }
+
+    @media (min-width: 900px) {
+      .hero-content {
+        text-align: left;
+      }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-badge img {
+      height: 40px;
+      width: auto;
+    }
+
+    .hero-title {
+      font-size: clamp(2.25rem, 5vw, 3.5rem);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      color: var(--gray-900);
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1rem, 2vw, 1.125rem);
+      color: var(--gray-500);
+      max-width: 480px;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    @media (min-width: 900px) {
+      .hero-subtitle {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    @media (min-width: 900px) {
+      .hero-actions {
+        justify-content: flex-start;
+      }
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.875rem 1.5rem;
+      border-radius: 980px;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: var(--transition-fast);
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--primary);
+    }
+
+    .btn-secondary:hover {
+      text-decoration: underline;
+    }
+
+    .btn-icon {
+      transition: transform var(--transition-fast);
+    }
+
+    .btn:hover .btn-icon {
+      transform: translateX(2px);
+    }
+
+    .hero-image {
+      position: relative;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      max-width: 600px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    /* === TRUST BAR === */
+    .trust-bar {
+      background: var(--gray-100);
+      padding: 2rem 0;
+      border-top: 1px solid var(--gray-200);
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .trust-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .trust-content {
+        justify-content: space-between;
+      }
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .trust-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--white);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .trust-icon svg {
+      width: 20px;
+      height: 20px;
+      color: var(--primary);
+    }
+
+    .trust-text {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--gray-700);
+    }
+
+    .trust-text span {
+      display: block;
+      font-size: 0.6875rem;
+      font-weight: 400;
+      color: var(--gray-500);
+    }
+
+    /* === SOLUTIONS === */
+    .solutions {
+      padding: var(--section-padding) 0;
+      background: var(--white);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 4rem;
+    }
+
+    .section-eyebrow {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gray-500);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: var(--gray-900);
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--gray-500);
+      line-height: 1.6;
+    }
+
+    .solutions-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    @media (min-width: 640px) {
+      .solutions-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .solutions-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .solution-card {
+      background: var(--gray-50);
+      border-radius: 18px;
+      padding: 2rem;
+      transition: var(--transition-smooth);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      display: block;
+    }
+
+    .solution-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .solution-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--white);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .solution-icon svg {
+      width: 24px;
+      height: 24px;
+      color: var(--primary);
+    }
+
+    .solution-card h3 {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--gray-900);
+    }
+
+    .solution-card p {
+      font-size: 0.875rem;
+      color: var(--gray-500);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .solution-link {
+      color: var(--primary);
+      font-size: 0.875rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+    }
+
+    /* === PRODUCTS SHOWCASE === */
+    .products {
+      padding: var(--section-padding) 0;
+      background: var(--gray-900);
+      color: var(--white);
+    }
+
+    .products .section-eyebrow {
+      color: var(--gray-400);
+    }
+
+    .products .section-title {
+      color: var(--white);
+    }
+
+    .products .section-subtitle {
+      color: var(--gray-400);
+    }
+
+    .products-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .product-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 18px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: var(--transition-smooth);
+      cursor: pointer;
+    }
+
+    .product-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.15);
+      transform: translateY(-4px);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .product-image img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .product-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      color: var(--white);
+    }
+
+    .product-card .product-desc {
+      font-size: 0.8125rem;
+      color: var(--gray-400);
+      margin-bottom: 1rem;
+    }
+
+    .product-cta {
+      color: var(--primary-light);
+      font-size: 0.8125rem;
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      transition: var(--transition-fast);
+    }
+
+    .product-cta:hover {
+      color: var(--white);
+    }
+
+    /* === SUCCESS STORIES === */
+    .success {
+      padding: var(--section-padding) 0;
+      background: var(--white);
+    }
+
+    .success-grid {
+      display: grid;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .success-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .success-card {
+      background: var(--gray-50);
+      border-radius: 18px;
+      overflow: hidden;
+      transition: var(--transition-smooth);
+    }
+
+    .success-card:hover {
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    }
+
+    .success-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .success-content {
+      padding: 1.5rem;
+    }
+
+    .success-client {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .success-card h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 0.75rem;
+      color: var(--gray-900);
+    }
+
+    .success-stats {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .success-stat {
+      text-align: left;
+    }
+
+    .success-stat-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gray-900);
+    }
+
+    .success-stat-label {
+      font-size: 0.75rem;
+      color: var(--gray-500);
+    }
+
+    .success-link {
+      color: var(--primary);
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+    }
+
+    /* === MDM SECTION === */
+    .mdm {
+      padding: var(--section-padding) 0;
+      background: linear-gradient(180deg, var(--gray-100) 0%, var(--white) 100%);
+    }
+
+    .mdm-grid {
+      display: grid;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      .mdm-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .mdm-content h2 {
+      font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: var(--gray-900);
+    }
+
+    .mdm-content p {
+      font-size: 1rem;
+      color: var(--gray-500);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .mdm-features {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .mdm-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .mdm-feature-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--primary);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .mdm-feature-icon svg {
+      width: 18px;
+      height: 18px;
+      color: var(--white);
+    }
+
+    .mdm-feature-text h4 {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--gray-900);
+      margin-bottom: 0.25rem;
+    }
+
+    .mdm-feature-text p {
+      font-size: 0.8125rem;
+      color: var(--gray-500);
+      margin-bottom: 0;
+    }
+
+    .mdm-logos {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .mdm-logos img {
+      height: 40px;
+      width: auto;
+      opacity: 0.8;
+      transition: var(--transition-fast);
+    }
+
+    .mdm-logos img:hover {
+      opacity: 1;
+    }
+
+    .mdm-image img {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    /* === CLIENTS === */
+    .clients {
+      padding: 4rem 0;
+      background: var(--white);
+      border-top: 1px solid var(--gray-200);
+    }
+
+    .clients-title {
+      text-align: center;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gray-500);
+      margin-bottom: 2rem;
+    }
+
+    .clients-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .clients-logos img {
+      height: 32px;
+      width: auto;
+      opacity: 0.5;
+      filter: grayscale(100%);
+      transition: var(--transition-fast);
+    }
+
+    .clients-logos img:hover {
+      opacity: 1;
+      filter: grayscale(0%);
+    }
+
+    /* === CTA === */
+    .cta {
+      padding: var(--section-padding) 0;
+      background: var(--gray-50);
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      color: var(--gray-900);
+    }
+
+    .cta p {
+      color: var(--gray-500);
+      font-size: 1.0625rem;
+      max-width: 500px;
+      margin: 0 auto 2rem;
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    /* === FOOTER === */
+    .footer {
+      background: var(--gray-900);
+      color: var(--gray-400);
+      padding: 4rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+      }
+    }
+
+    .footer-brand p {
+      font-size: 0.875rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      max-width: 280px;
+    }
+
+    .footer-badge {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      padding: 1rem;
+      display: inline-block;
+    }
+
+    .footer-badge img {
+      height: 50px;
+      width: auto;
+    }
+
+    .footer-column h4 {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--white);
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column li {
+      margin-bottom: 0.625rem;
+    }
+
+    .footer-column a {
+      color: var(--gray-400);
+      text-decoration: none;
+      font-size: 0.8125rem;
+      transition: var(--transition-fast);
+    }
+
+    .footer-column a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.75rem;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .footer-social a {
+      color: var(--gray-400);
+      transition: var(--transition-fast);
+    }
+
+    .footer-social a:hover {
+      color: var(--white);
+    }
+
+    /* === MODAL === */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal {
+      background: var(--white);
+      border-radius: 18px;
+      max-width: 480px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .modal-header {
+      padding: 1.5rem 1.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .modal-header h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--gray-900);
+    }
+
+    .modal-header p {
+      font-size: 0.8125rem;
+      color: var(--gray-500);
+      margin-top: 0.25rem;
+    }
+
+    .modal-close {
+      width: 28px;
+      height: 28px;
+      background: var(--gray-100);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition-fast);
+    }
+
+    .modal-close:hover {
+      background: var(--gray-200);
+    }
+
+    .modal-body {
+      padding: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--gray-700);
+      margin-bottom: 0.375rem;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--gray-200);
+      border-radius: 10px;
+      font-size: 0.875rem;
+      font-family: inherit;
+      transition: var(--transition-fast);
+      background: var(--white);
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.1);
+    }
+
+    .form-textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 0.875rem;
+      margin-top: 0.5rem;
+    }
+
+    /* === WHATSAPP FLOAT === */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 1500;
+    }
+
+    .whatsapp-btn {
+      width: 56px;
+      height: 56px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+      transition: var(--transition-fast);
+      text-decoration: none;
+    }
+
+    .whatsapp-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+    }
+
+    .whatsapp-btn svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    /* === ANIMATIONS === */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-in {
+      animation: fadeInUp 0.6s ease-out both;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="nav-logo-text">Pcmác</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#solutions">Soluciones</a></li>
+        <li><a href="#products">Productos</a></li>
+        <li><a href="https://pcmac.co/servicio-tecnico-apple/">Servicio Técnico</a></li>
+        <li><a href="https://pcmac.co/educacion/">Educación</a></li>
+        <li><a href="#success">Casos de Éxito</a></li>
+        <li><a href="https://pcmac.co/blog-pcmac/">Blog</a></li>
+      </ul>
+      
+      <a href="#" class="nav-cta" onclick="openModal(); return false;">Solicitar Asesoría</a>
+      
+      <button class="nav-mobile-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <!-- Apple Partner Badge -->
+            <img src="https://pcmac.co/wp-content/uploads/2025/11/Apple_Biz_Partner_Logo_2ln_Blk_CI_050725.png" alt="Apple Business Partner">
+          </div>
+          
+          <h1 class="hero-title">
+            Tu Experto Apple<br>de Confianza
+          </h1>
+          
+          <p class="hero-subtitle">
+            Más de 26 años acompañando a empresas y usuarios en Colombia. Soluciones Apple que optimizan tu tiempo y recursos, aumentando la productividad.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary" onclick="openModal(); return false;">
+              Pide una asesoría gratuita
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#solutions" class="btn btn-secondary">
+              Conoce nuestras soluciones
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-image">
+          <!-- Real Apple Product Image -->
+          <img src="https://www.apple.com/v/macbook-pro/ak/images/overview/hero/intro__ewz1ro7xs14y_large.jpg" alt="MacBook Pro">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-content">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="trust-text">
+            Authorized Service Provider
+            <span>Centro de Servicio Apple</span>
+          </div>
+        </div>
+        
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div class="trust-text">
+            +26 años
+            <span>de experiencia</span>
+          </div>
+        </div>
+        
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="trust-text">
+            152,000+
+            <span>licencias gestionadas</span>
+          </div>
+        </div>
+        
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div class="trust-text">
+            4.8★ en Google
+            <span>clientes satisfechos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions -->
+  <section class="solutions" id="solutions">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-eyebrow">Nuestras Soluciones</p>
+        <h2 class="section-title">Elige el tema que más te interese</h2>
+        <p class="section-subtitle">
+          Tu aliado en la transformación digital. Te brindamos soluciones que optimizan tu tiempo y recursos.
+        </p>
+      </header>
+      
+      <div class="solutions-grid">
+        <a href="https://pcmac.co/apple/" class="solution-card">
+          <div class="solution-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h3>Apple en la Empresa</h3>
+          <p>Una sola persona de TI puede gestionar 4,000 dispositivos con las herramientas adecuadas.</p>
+          <span class="solution-link">
+            Más información
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+        
+        <a href="https://pcmac.co/servicio-tecnico-apple/" class="solution-card">
+          <div class="solution-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <h3>Soporte Técnico Apple</h3>
+          <p>Centro autorizado Apple. Reparaciones por técnicos certificados de manera ágil y cómoda.</p>
+          <span class="solution-link">
+            Más información
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+        
+        <a href="https://pcmac.co/educacion/" class="solution-card">
+          <div class="solution-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            </svg>
+          </div>
+          <h3>Soluciones Educativas</h3>
+          <p>Pcmác Edúca: integración de tecnologías Apple, Adobe, ELL y D2L en instituciones educativas.</p>
+          <span class="solution-link">
+            Más información
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+        
+        <a href="#mdm" class="solution-card">
+          <div class="solution-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Soluciones MDM</h3>
+          <p>Gestión y configuración de dispositivos de forma segura con Mosyle y Jamf.</p>
+          <span class="solution-link">
+            Más información
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+        
+        <a href="https://pcmac.co/logistica/" class="solution-card">
+          <div class="solution-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="3" width="15" height="13"/>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+              <circle cx="5.5" cy="18.5" r="2.5"/>
+              <circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+          </div>
+          <h3>Logística y Almacenamiento</h3>
+          <p>Gestión global simplificada para la logística y almacenamiento de equipos remotos.</p>
+          <span class="solution-link">
+            Más información
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+        
+        <a href="https://pcmac.co/corporativas/" class="solution-card">
+          <div class="solution-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="1" x2="12" y2="23"/>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h3>Soluciones Empresariales</h3>
+          <p>Transformación digital completa. Nos encargamos de todo para que disfrutes los resultados.</p>
+          <span class="solution-link">
+            Más información
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products" id="products">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-eyebrow">Catálogo Apple</p>
+        <h2 class="section-title">Últimos lanzamientos Apple</h2>
+        <p class="section-subtitle">
+          Descubre la nueva generación de productos Apple para tu empresa.
+        </p>
+      </header>
+      
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://www.apple.com/v/iphone/home/bx/images/overview/select/iphone_17_pro__erw9pgou27mu_xlarge.png" alt="iPhone 17 Pro">
+          </div>
+          <h3>iPhone 17 Pro</h3>
+          <p class="product-desc">El iPhone más avanzado</p>
+          <a href="#" class="product-cta" onclick="openModal(); return false;">
+            Solicitar cotización
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://www.apple.com/v/macbook-pro/ak/images/overview/hero/intro__ewz1ro7xs14y_large.jpg" alt="MacBook Pro M4">
+          </div>
+          <h3>MacBook Pro</h3>
+          <p class="product-desc">Chip M4 Pro y M4 Max</p>
+          <a href="#" class="product-cta" onclick="openModal(); return false;">
+            Solicitar cotización
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://www.apple.com/v/ipad-pro/ar/images/overview/hero/ipad_702702702702702702__e5i68amsvpuy_xlarge.png" alt="iPad Pro M4">
+          </div>
+          <h3>iPad Pro</h3>
+          <p class="product-desc">Chip M4, pantalla OLED</p>
+          <a href="#" class="product-cta" onclick="openModal(); return false;">
+            Solicitar cotización
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://www.apple.com/v/apple-watch-series-10/d/images/overview/design/design_case__fi9yw1svow2e_xlarge.jpg" alt="Apple Watch">
+          </div>
+          <h3>Apple Watch</h3>
+          <p class="product-desc">Series 10</p>
+          <a href="#" class="product-cta" onclick="openModal(); return false;">
+            Solicitar cotización
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories -->
+  <section class="success" id="success">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-eyebrow">Casos de Éxito</p>
+        <h2 class="section-title">Historias de éxito con nuestros socios</h2>
+        <p class="section-subtitle">
+          Empresas que confían en nosotros para su transformación digital.
+        </p>
+      </header>
+      
+      <div class="success-grid">
+        <article class="success-card">
+          <img src="https://pcmac.co/wp-content/uploads/2024/08/789ef00656cb53b6a14b4570152d457c_XL.jpg" alt="SENA" class="success-image">
+          <div class="success-content">
+            <p class="success-client">SENA</p>
+            <h3>Mesa de servicio para la entidad más grande de Colombia</h3>
+            <div class="success-stats">
+              <div class="success-stat">
+                <div class="success-stat-value">152K+</div>
+                <div class="success-stat-label">Licencias</div>
+              </div>
+              <div class="success-stat">
+                <div class="success-stat-value">2,000</div>
+                <div class="success-stat-label">Tickets/mes</div>
+              </div>
+            </div>
+            <a href="https://pcmac.co/negocios/mesa-de-servicio-para-la-entidad-mas-grande-de-colombia/" class="success-link">
+              Lee la historia completa
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+        
+        <article class="success-card">
+          <img src="https://pcmac.co/wp-content/uploads/2024/08/c-level-truora-1_42278474_20230430145427-1024x535.jpg" alt="Truora" class="success-image">
+          <div class="success-content">
+            <p class="success-client">Truora</p>
+            <h3>Transición a Apple con seguridad y soporte continuo</h3>
+            <div class="success-stats">
+              <div class="success-stat">
+                <div class="success-stat-value">112</div>
+                <div class="success-stat-label">Máquinas</div>
+              </div>
+              <div class="success-stat">
+                <div class="success-stat-value">130</div>
+                <div class="success-stat-label">Licencias</div>
+              </div>
+            </div>
+            <a href="https://pcmac.co/stories/" class="success-link">
+              Lee la historia completa
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MDM Section -->
+  <section class="mdm" id="mdm">
+    <div class="container">
+      <div class="mdm-grid">
+        <div class="mdm-content">
+          <h2>¿Sabías que una sola persona de TI puede gestionar 4,000 dispositivos?</h2>
+          <p>
+            MDM (Mobile Device Management) te permite gestionar y configurar dispositivos de forma segura, enviando perfiles y comandos directamente a cada dispositivo.
+          </p>
+          
+          <div class="mdm-features">
+            <div class="mdm-feature">
+              <div class="mdm-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div class="mdm-feature-text">
+                <h4>Seguridad Biométrica</h4>
+                <p>Autenticación segura y cuentas Apple administradas.</p>
+              </div>
+            </div>
+            
+            <div class="mdm-feature">
+              <div class="mdm-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                </svg>
+              </div>
+              <div class="mdm-feature-text">
+                <h4>Implementación sin intervención</h4>
+                <p>Apple Business Manager + MDM para deployment automático.</p>
+              </div>
+            </div>
+            
+            <div class="mdm-feature">
+              <div class="mdm-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </div>
+              <div class="mdm-feature-text">
+                <h4>Integración universal</h4>
+                <p>Apple se integra con tu infraestructura existente.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mdm-logos">
+            <img src="https://pcmac.co/wp-content/uploads/2024/08/mosyle_logo.jpeg" alt="Mosyle">
+            <img src="https://pcmac.co/wp-content/uploads/2022/07/jamf-1-1024x1024.jpeg" alt="Jamf">
+          </div>
+        </div>
+        
+        <div class="mdm-image">
+          <img src="https://www.apple.com/v/business/o/images/overview/identity-security/security_startframe__grpgqu0wauqa_xlarge.jpg" alt="Apple Business Security">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section class="clients">
+    <div class="container">
+      <p class="clients-title">Empresas que confían en nosotros</p>
+      <div class="clients-logos">
+        <img src="https://pcmac.co/wp-content/uploads/2020/05/LOGOS-01.png" alt="Cliente 1">
+        <img src="https://pcmac.co/wp-content/uploads/2020/05/LOGOS-02.png" alt="Cliente 2">
+        <img src="https://pcmac.co/wp-content/uploads/2020/05/LOGOS-03.png" alt="Cliente 3">
+        <img src="https://pcmac.co/wp-content/uploads/2020/05/LOGOS-04.png" alt="Cliente 4">
+        <img src="https://pcmac.co/wp-content/uploads/2020/05/LOGOS-05.png" alt="Cliente 5">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Hablemos de negocios</h2>
+      <p>Agenda una asesoría gratuita con nuestros expertos certificados Apple.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-primary" onclick="openModal(); return false;">
+          Pide una asesoría gratuita
+          <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="https://meetings.hubspot.com/servicio-tecnico-apple" class="btn btn-secondary" target="_blank">
+          Agenda cita de soporte
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p>Tu Experto Apple de Confianza. Más de 26 años acompañando a empresas y usuarios en Colombia hacia la innovación tecnológica.</p>
+          <div class="footer-badge">
+            <img src="https://pcmac.co/wp-content/uploads/2025/11/Biz_Partner_Logo_2ln_Blk_CI_050725.png" alt="Apple Business Partner" style="filter: invert(1);">
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Servicio Técnico</h4>
+          <ul>
+            <li><a href="https://pcmac.co/servicio-tecnico-apple/">Reparaciones</a></li>
+            <li><a href="https://pcmac.co/garantias-apple/">Garantías Apple</a></li>
+            <li><a href="https://pcmac.co/domicilios/">Domicilios</a></li>
+            <li><a href="https://pcmac.co/ods/">Rastreo de orden</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Soluciones</h4>
+          <ul>
+            <li><a href="https://pcmac.co/apple/">Apple Empresa</a></li>
+            <li><a href="https://pcmac.co/educacion/">Educación</a></li>
+            <li><a href="https://pcmac.co/mosyle/">Mosyle</a></li>
+            <li><a href="https://pcmac.co/jamf/">Jamf</a></li>
+            <li><a href="https://pcmac.co/logistica/">Logística</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Compañía</h4>
+          <ul>
+            <li><a href="https://pcmac.co/quienes-somos/">Quiénes somos</a></li>
+            <li><a href="https://pcmac.co/stories/">Casos de éxito</a></li>
+            <li><a href="https://pcmac.co/blog-pcmac/">Blog</a></li>
+            <li><a href="https://pcmac.co/contacto/">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2024 PcMac S.A. Todos los derechos reservados.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/pcmac-co/" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/pcmac.col/" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/573157828266" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="modal-header">
+        <div>
+          <h2>Solicitar Asesoría</h2>
+          <p>Te contactaremos en menos de 24 horas</p>
+        </div>
+        <button class="modal-close" onclick="closeModal()" aria-label="Cerrar">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+        <form id="contact-form" action="https://hola.pcmac.co/asesoriagratuita" method="GET">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">Nombre *</label>
+              <input type="text" id="name" class="form-input" required placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Teléfono *</label>
+              <input type="tel" id="phone" class="form-input" required placeholder="+57">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="email">Email corporativo *</label>
+            <input type="email" id="email" class="form-input" required placeholder="tu@empresa.com">
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="company">Empresa *</label>
+            <input type="text" id="company" class="form-input" required placeholder="Nombre de tu empresa">
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="interest">¿En qué solución estás interesado?</label>
+            <select id="interest" class="form-select">
+              <option value="">Selecciona una opción...</option>
+              <option value="apple-empresa">Apple en la Empresa</option>
+              <option value="servicio-tecnico">Servicio Técnico</option>
+              <option value="educacion">Soluciones Educativas</option>
+              <option value="mdm">Soluciones MDM</option>
+              <option value="logistica">Logística y Almacenamiento</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="message">Mensaje</label>
+            <textarea id="message" class="form-textarea" placeholder="Cuéntanos sobre tus necesidades..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary form-submit">
+            Enviar solicitud
+            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Float -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/573157828266" class="whatsapp-btn" target="_blank" aria-label="Contactar por WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    // Modal functions
+    function openModal() {
+      document.getElementById('modal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('modal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Close on overlay click
+    document.getElementById('modal').addEventListener('click', (e) => {
+      if (e.target.classList.contains('modal-overlay')) closeModal();
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href !== '#') {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

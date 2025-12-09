@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m http.server:*)",
+      "Bash(start http://localhost:8000)",
+      "Bash(findstr:*)",
+      "WebFetch(domain:pcmac.co)",
+      "Bash(netstat:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
